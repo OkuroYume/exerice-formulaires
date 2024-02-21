@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>eikon parcel starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <form class="test-form">
+      <div class="name">
+        <label for="firstname"></label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Prénom"
+        />
+        <label for="lastname"></label>
+        <input type="text" id="lastname" name="lastname" placeholder="Nom" />
+      </div>
+      <div class="language">
+        <input type="radio" id="Français" name="language" value="Français" />
+        <label for="francais">Français</label>
+      </div>
+      <div>
+        <input type="radio" id="Allemand" name="language" value="Allemand" />
+        <label for="Allemand">Allemand</label>
+      </div>
+      <div>
+        <input type="radio" id="Italien" name="language" value="Italien" />
+        <label for="Italien">Italien</label>
+      </div>
+      <div class="newsletter">
+        <input type="checkbox" id="Yes" name="Newsletter" value="Yes" />
+        <label for="Yes">S’abonner à la newsletter</label>
+      </div>
+      <div>
+        <input type="checkbox" id="No" name="Newsletter" value="No" />
+        <label for="No">J’accepte les conditions générales</label>
+      </div>
+      <div class="country">
+        <label for="country"></label>
+        <select id="country" name="country">
+          <option value="ch">Suisse</option>
+          <option value="fr">France</option>
+          <option value="de">Allemagne</option>
+        </select>
+      </div>
+      <div class="comment">
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+    </form>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
