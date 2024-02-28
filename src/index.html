@@ -15,41 +15,52 @@
           id="firstname"
           name="firstname"
           placeholder="Prénom"
+          class="name"
         />
         <label for="lastname"></label>
-        <input type="text" id="lastname" name="lastname" placeholder="Nom" />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Nom"
+          class="name"
+        />
       </div>
-      <div class="language">
-        <input type="radio" id="Français" name="language" value="Français" />
-        <label for="francais">Français</label>
-      </div>
-      <div>
-        <input type="radio" id="Allemand" name="language" value="Allemand" />
-        <label for="Allemand">Allemand</label>
-      </div>
-      <div>
-        <input type="radio" id="Italien" name="language" value="Italien" />
-        <label for="Italien">Italien</label>
+      <div class="language_padding">
+        <div class="language">
+          <input type="radio" id="Français" name="language" value="Français" />
+          <label for="francais">Français</label>
+        </div>
+        <div class="language">
+          <input type="radio" id="Allemand" name="language" value="Allemand" />
+          <label for="Allemand">Allemand</label>
+        </div>
+        <div class="language">
+          <input type="radio" id="Italien" name="language" value="Italien" />
+          <label for="Italien">Italien</label>
+        </div>
       </div>
       <div class="newsletter">
         <input type="checkbox" id="Yes" name="Newsletter" value="Yes" />
         <label for="Yes">S’abonner à la newsletter</label>
       </div>
-      <div>
+      <div class="newsletter">
         <input type="checkbox" id="No" name="Newsletter" value="No" />
         <label for="No">J’accepte les conditions générales</label>
       </div>
-      <div class="country">
+      <div>
         <label for="country"></label>
-        <select id="country" name="country">
+        <select id="country" name="country" class="country">
           <option value="ch">Suisse</option>
           <option value="fr">France</option>
           <option value="de">Allemagne</option>
         </select>
       </div>
+      <p>Remarque</p>
       <div class="comment">
         <textarea name="comment" id="comment"></textarea>
       </div>
+      <input type="submit" class="button" />
     </form>
     <script src="js/main.js" type="module"></script>
   </body>
